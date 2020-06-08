@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Error message for invalid schedule</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	if( g_form.getValue('active') == 'true' && g_form.getValue('schedule_type') == 'once' ){
+		var scheduledTime = g_form.getValue('scheduled_time');
+		var dt = getDateFromFormat(scheduledTime, g_user_date_time_format);
+		var nowTime = new Date();
+		if (dt < nowTime) {
+			g_form.addErrorMessage('Sorry! You have scheduled a task in the past. We are unable to create the task. Please change the schedule time.');
+			return false;
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-06-08 21:22:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4318be952f99d890ff24b8e72799b64a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Error message for invalid schedule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_script_client_4318be952f99d890ff24b8e72799b64a</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-06-08 21:57:43</sys_updated_on>
+        <table>x_277835_schdl_it_task_detail</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

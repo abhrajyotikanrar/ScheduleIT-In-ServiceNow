@@ -48,7 +48,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-05-19 20:35:54</sys_created_on>
-        <sys_id>39d2a6d12f59d890ff24b8e72799b651</sys_id>
+        <sys_id>21be2a9d2f59d890ff24b8e72799b604</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Class</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_dictionary_x_277835_schdl_it_task_detail_sys_class_name</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-08 19:32:05</sys_updated_on>
+        <sys_updated_on>2020-06-08 20:23:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
