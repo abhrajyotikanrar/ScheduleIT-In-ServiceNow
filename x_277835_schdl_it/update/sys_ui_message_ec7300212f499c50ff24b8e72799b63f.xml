@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application/>
+        <key>ScheduleIT schedule section description</key>
+        <language>en</language>
+        <message>&lt;p&gt;&lt;h4&gt;Use this section to schedule your task&lt;/h4&gt;&lt;/p&gt;&#13;
+&lt;b&gt;Schedule Type:&lt;/b&gt; How frequently the task activity will take place.&lt;br/&gt;&#13;
+&lt;b&gt;Scheduled Time:&lt;/b&gt; When exactly the task activity will take place.&lt;br/&gt;&#13;
+&lt;b&gt;Scheduled Day:&lt;/b&gt; In which day the activity will take place. (Only available to "Weekly" type schedule)&lt;br/&gt;</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-05-27 16:21:52</sys_created_on>
+        <sys_id>ec7300212f499c50ff24b8e72799b63f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>ScheduleIT schedule section description</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_ui_message_ec7300212f499c50ff24b8e72799b63f</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-05-28 23:43:13</sys_updated_on>
+    </sys_ui_message>
+</record_update>

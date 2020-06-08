@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Reminder Log" max_length="40" name="x_277835_schdl_it_reminder_log" sizeclass="8" type="collection">
+        <element choice="1" label="Reminder Mode" max_length="40" name="reminder_mode" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Email" value="email"/>
+                <element inactive_on_update="false" label="Email &amp; SMS" value="email_n_sms"/>
+                <element inactive_on_update="false" label="SMS" value="sms"/>
+            </choice>
+        </element>
+        <element choice="1" label="Reminder Status" max_length="40" name="reminder_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" value="completed"/>
+                <element inactive_on_update="false" label="Failed" value="failed"/>
+                <element inactive_on_update="false" label="Not Required" value="not_required"/>
+                <element inactive_on_update="false" label="Scheduled" value="scheduled"/>
+            </choice>
+        </element>
+        <element label="Reminder Time" max_length="40" name="reminder_time" type="calendar_date_time"/>
+        <element choice="1" label="Scheduled Type" max_length="40" name="scheduled_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Daily" value="daily"/>
+                <element inactive_on_update="false" label="Once" value="once"/>
+                <element inactive_on_update="false" label="Weekdays (Mon - Fri)" value="weekdays"/>
+                <element inactive_on_update="false" label="Weekends (Sat - Sun)" value="weekends"/>
+                <element inactive_on_update="false" label="Weekly" value="weekly"/>
+            </choice>
+        </element>
+        <element label="Task" max_length="32" name="task" reference="x_277835_schdl_it_task_detail" type="reference"/>
+        <element label="Task Scheduled Time" max_length="40" name="task_time" type="calendar_date_time"/>
+        <index name="index">
+            <element name="task"/>
+        </index>
+    </element>
+</database>

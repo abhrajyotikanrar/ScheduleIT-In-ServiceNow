@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>scheduled_day</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-05-27 15:38:08</sys_created_on>
+        <sys_id>7b1a33592f099c50ff24b8e72799b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scheduled_day</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_ui_policy_action_7b1a33592f099c50ff24b8e72799b6e0</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-05-27 15:38:08</sys_updated_on>
+        <table>x_277835_schdl_it_task_detail</table>
+        <ui_policy display_value="Enable &quot;scheduled_day&quot; field for Schedule Type &quot;Weekly&quot;">6b5977192f099c50ff24b8e72799b6ce</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>
