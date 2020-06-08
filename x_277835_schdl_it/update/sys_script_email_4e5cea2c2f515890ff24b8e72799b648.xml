@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>display_task_details</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+	template.print("<style>");
+	template.print(".label{width: 35%; background-color: #00796b; color: white;}\n");
+	template.print(".fieldValue{width: 65%;}\n");
+	template.print("table{border-spacing: 0;}\n");
+	template.print("td{padding: 10px;}\n");
+	template.print("</style>");
+	
+	var rec;
+	var grTask = new GlideRecord(event.table);
+	if(grTask.get(event.instance)){
+		rec = grTask;
+	}
+	
+	var gdt = new GlideDateTime();
+	var taskLink = "/" + rec.sys_class_name + ".do?sys_id=" + current.sys_id;
+
+	template.print("<div style='padding:5px 15px; width: 100%;'>");
+	template.print("<table style='width: 100%;'>");
+	template.print("<tr>");
+	template.print("<td class='label'>Task Number:</td>");
+	template.print("<td class='fieldValue'>" + "<a href='" + taskLink + "' style='decoration: none;'>" + rec.number + "</a>" + "</td>");
+	template.print("</tr>");
+	template.print("<tr>");
+	template.print("<td class='label'>Task Type:</td>");
+	template.print("<td class='fieldValue'>" + rec.task_type.getDisplayValue() + "</td>");
+	template.print("</tr>");
+	template.print("<tr>");
+	template.print("<td class='label'>Title:</td>");
+	template.print("<td class='fieldValue'>" + rec.title + "</td>");
+	template.print("</tr>");
+	template.print("<tr>");
+	template.print("<td class='label'>Description:</td>");
+	template.print("<td class='fieldValue'>" + "<label style='height: 100px; width: 100%;'>" + rec.description + "</label>" + "</td>");
+	template.print("</tr>");
+	template.print("<tr>");
+	template.print("<td class='label'>Schedule Type:</td>");
+	template.print("<td class='fieldValue'>" + rec.schedule_type.getDisplayValue() + "</td>");
+	template.print("</tr>");
+	if(rec.schedule_type == 'once'){
+		gdt.setValue(rec.scheduled_time);
+		template.print("<tr>");
+		template.print("<td class='label'>Scheduled Time:</td>");
+		template.print("<td class='fieldValue'>" + gdt.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	}
+	if(rec.schedule_type == 'weekly'){
+		template.print("<tr>");
+		template.print("<td class='label'>Scheduled Day:</td>");
+		template.print("<td class='fieldValue'>" + rec.scheduled_day.getDisplayValue() + "</td>");
+		template.print("</tr>");
+	}
+	if(rec.schedule_type != 'once'){
+		gdt.setValue(rec.time);
+		template.print("<tr>");
+		template.print("<td class='label'>Scheduled Time:</td>");
+		template.print("<td class='fieldValue'>" + gdt.getLocalTime().getByFormat('hh:mm:ss a').toString() + "</td>");
+		template.print("</tr>");
+	}
+	template.print("<tr>");
+	template.print("<td class='label'>Notification Preference:</td>");
+	template.print("<td class='fieldValue'>" + rec.notification_preference.getDisplayValue() + "</td>");
+	template.print("</tr>");
+	template.print("<tr>");
+	template.print("<td class='label'>Notification Before:</td>");
+	template.print("<td class='fieldValue'>" + rec.notification_before.getDisplayValue() + "</td>");
+	template.print("</tr>");
+	template.print("</table>");
+	
+	
+	
+	template.print("</div>");
+	
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-06-06 13:34:45</sys_created_on>
+        <sys_id>4e5cea2c2f515890ff24b8e72799b648</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>display_task_details</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_script_email_4e5cea2c2f515890ff24b8e72799b648</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-06-07 11:55:41</sys_updated_on>
+    </sys_script_email>
+</record_update>

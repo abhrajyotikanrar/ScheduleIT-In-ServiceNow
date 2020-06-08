@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="scheduled_time" label="Scheduled Time" language="en" table="x_277835_schdl_it_task_detail">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>scheduled_time</element>
+            <help/>
+            <hint/>
+            <label>Scheduled Time</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_task_detail</name>
+            <plural>Scheduled Times</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-19 20:43:54</sys_created_on>
+            <sys_id>a883b3be2f349450ff24b8e72799b676</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Scheduled Time</sys_name>
+            <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+            <sys_update_name>sys_documentation_x_277835_schdl_it_task_detail_scheduled_time_en</sys_update_name>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-19 20:43:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="schedule_type" table="x_277835_schdl_it_task_detail" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>schedule_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Once</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sequence>100</sequence>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-27 12:41:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86d193952f859c50ff24b8e72799b630</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-27 12:46:07</sys_updated_on>
+            <value>once</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>schedule_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Daily</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sequence>110</sequence>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-27 12:42:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78d1df552f859c50ff24b8e72799b6a2</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-27 15:24:28</sys_updated_on>
+            <value>daily</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>schedule_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weekdays (Mon - Fri)</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sequence>120</sequence>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-27 12:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f02d3952f859c50ff24b8e72799b61f</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-27 15:24:34</sys_updated_on>
+            <value>weekdays</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>schedule_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weekends (Sat - Sun)</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sequence>130</sequence>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-27 15:23:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6f457bd12f099c50ff24b8e72799b684</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-27 15:24:41</sys_updated_on>
+            <value>weekends</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>schedule_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Weekly</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sequence>140</sequence>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-27 15:25:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ade67f552f099c50ff24b8e72799b616</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-27 15:26:10</sys_updated_on>
+            <value>weekly</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>schedule_type</element>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-27 12:41:49</sys_created_on>
+            <sys_id>34e113952f859c50ff24b8e72799b680</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>schedule_type</sys_name>
+            <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+            <sys_update_name>sys_choice_x_277835_schdl_it_task_detail_schedule_type</sys_update_name>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-27 12:41:49</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

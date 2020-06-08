@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Individual Task" language="en" table="x_277835_schdl_it_individual_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Individual Task</label>
+            <language>en</language>
+            <name>x_277835_schdl_it_individual_task</name>
+            <plural>Individual Tasks</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-05-19 20:57:22</sys_created_on>
+            <sys_id>7196bf322f749450ff24b8e72799b6fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Individual Task</sys_name>
+            <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+            <sys_update_name>sys_documentation_x_277835_schdl_it_individual_task__en</sys_update_name>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-05-19 20:57:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

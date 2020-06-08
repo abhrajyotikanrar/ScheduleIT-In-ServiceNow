@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" sizeclass="8" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" max_length="500" name="description" type="string"/>
+        <element choice="3" default="10" label="Reminder Notification Before" max_length="40" name="notification_before" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="5 Minutes" sequence="100" value="5"/>
+                <element inactive_on_update="false" label="10 Minutes" sequence="110" value="10"/>
+                <element inactive_on_update="false" label="15 Minutes" sequence="120" value="15"/>
+                <element inactive_on_update="false" label="20 Minutes" sequence="130" value="20"/>
+                <element inactive_on_update="false" label="30 Minutes" sequence="140" value="30"/>
+                <element inactive_on_update="false" label="45 Minutes" sequence="150" value="45"/>
+                <element inactive_on_update="false" label="1 Hour" sequence="160" value="60"/>
+                <element inactive_on_update="false" label="1 Hour 30 Minutes" sequence="170" value="90"/>
+                <element inactive_on_update="false" label="2 Hours" sequence="180" value="120"/>
+            </choice>
+        </element>
+        <element choice="3" default="email" label="Notification Preference" max_length="40" name="notification_preference" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Email" sequence="100" value="email"/>
+                <element inactive_on_update="false" label="SMS" sequence="110" value="sms"/>
+                <element inactive_on_update="false" label="Email &amp; SMS" sequence="120" value="email_n_sms"/>
+            </choice>
+        </element>
+        <element choice="1" label="Notification Status" max_length="40" name="notification_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Failure" value="failure"/>
+                <element inactive_on_update="false" label="Scheduled" value="scheduled"/>
+                <element inactive_on_update="false" label="Sent" value="sent"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="1" label="Scheduled Day" max_length="40" name="scheduled_day" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Monday" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Tuesday" sequence="120" value="2"/>
+                <element inactive_on_update="false" label="Wednesday" sequence="130" value="3"/>
+                <element inactive_on_update="false" label="Thursday" sequence="140" value="4"/>
+                <element inactive_on_update="false" label="Friday" sequence="150" value="5"/>
+                <element inactive_on_update="false" label="Saturday" sequence="160" value="6"/>
+                <element inactive_on_update="false" label="Sunday" sequence="170" value="7"/>
+            </choice>
+        </element>
+        <element label="Scheduled Time" max_length="40" name="scheduled_time" type="calendar_date_time"/>
+        <element choice="3" default="once" label="Schedule Type" max_length="40" name="schedule_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Once" sequence="100" value="once"/>
+                <element inactive_on_update="false" label="Daily" sequence="110" value="daily"/>
+                <element inactive_on_update="false" label="Weekdays (Mon - Fri)" sequence="120" value="weekdays"/>
+                <element inactive_on_update="false" label="Weekends (Sat - Sun)" sequence="130" value="weekends"/>
+                <element inactive_on_update="false" label="Weekly" sequence="140" value="weekly"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="1" label="Task Status" max_length="40" name="task_status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" value="completed"/>
+                <element inactive_on_update="false" label="Scheduled" value="scheduled"/>
+                <element inactive_on_update="false" label="Time Crossed" value="time_crossed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Task Type" mandatory="true" max_length="50" name="task_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Coffee break" sequence="100" value="coffee_break"/>
+                <element inactive_on_update="false" label="Huddle" sequence="110" value="huddle"/>
+                <element inactive_on_update="false" label="Birthday" sequence="120" value="birtday"/>
+                <element inactive_on_update="false" label="Meeting" sequence="130" value="meeting"/>
+                <element inactive_on_update="false" label="Lunch" sequence="140" value="lunch"/>
+                <element inactive_on_update="false" label="Training" sequence="150" value="training"/>
+                <element inactive_on_update="false" label="Team activities" sequence="160" value="team_activities"/>
+                <element inactive_on_update="false" label="Project activities" sequence="170" value="project_activities"/>
+                <element inactive_on_update="false" label="Travel" sequence="180" value="travel"/>
+                <element inactive_on_update="false" label="Event" sequence="190" value="event"/>
+                <element inactive_on_update="false" label="Webinar" sequence="200" value="webinar"/>
+                <element inactive_on_update="false" label="Others" sequence="300" value="others"/>
+            </choice>
+        </element>
+        <element label="Scheduled Time" max_length="40" name="time" type="glide_time"/>
+        <element label="Title" mandatory="true" max_length="100" name="title" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
