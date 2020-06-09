@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Reminder Log" max_length="40" name="x_277835_schdl_it_reminder_log" sizeclass="4" type="collection">
+    <element label="Reminder Log" max_length="40" name="x_277835_schdl_it_reminder_log" type="collection">
         <element choice="1" label="Reminder Mode" max_length="40" name="reminder_mode" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Email" value="email"/>
