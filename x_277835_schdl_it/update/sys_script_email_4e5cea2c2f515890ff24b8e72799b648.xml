@@ -19,7 +19,7 @@
 	var taskLink = "sp?sys_id=" + current.sys_id + "&view=Service_portal&id=form&table=" + rec.sys_class_name;
 
 	template.print("<div style='padding:5px 15px; width: 100%;'>");
-	template.print("<table style='width: 100%; border-spacing: 0;'>");
+	template.print("<table style='width: 100%; border-spacing: 0; background-color: transparent;'>");
 	template.print("<tr>");
 	template.print("<td style='" + labelStyle + "'>Task Number:</td>");
 	template.print("<td style='" + fieldValueStyle + "'>" + "<a href='" + taskLink + "' style='decoration: none;'>" + rec.number + "</a>" + "</td>");
@@ -69,9 +69,6 @@
 	template.print("<td style='" + fieldValueStyle + "'>" + rec.notification_before.getDisplayValue() + "</td>");
 	template.print("</tr>");
 	template.print("</table>");
-	
-	
-	
 	template.print("</div>");
 	
 
@@ -80,13 +77,13 @@
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-06-06 13:34:45</sys_created_on>
         <sys_id>4e5cea2c2f515890ff24b8e72799b648</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>display_task_details</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy/>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_email_4e5cea2c2f515890ff24b8e72799b648</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-08 23:12:23</sys_updated_on>
+        <sys_updated_on>2020-06-09 11:23:17</sys_updated_on>
     </sys_script_email>
 </record_update>

@@ -45,8 +45,9 @@
  }
 </style>
 <div class="content">${mail_script:scheduleit_header}<br />
-<div style="padding: 15px;">Hi&nbsp;Team,<br /><br />A new task ${number} has been scheduled by ${scheduled_user.name} for your group "${group.name}" on ScheduleIT with below details. Please be assured we will send the reminder notification to you as created. If you wish to change the task details, please click on the below task number and modify the task as per your preferences.</div>
+<div style="padding: 15px;">Hi&nbsp;Team,<br /><br />A new task "${title}" has been scheduled by ${scheduled_user.name} for your group "${group.name}" on ScheduleIT with below details. Please be assured we will send the reminder notification to you as you or your teammate created. If you wish to change the task details, please click on the below task number and modify the task as per your preferences.</div>
 <br />${mail_script:display_task_details} <br />${mail_script:scheduleit_footer}</div>
+<p>&nbsp;</p>
 <p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -69,7 +70,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>babc4fbc2f119890ff24b8e72799b670</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Notification - Group Task Created</sys_name>
         <sys_overrides/>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
@@ -77,7 +78,7 @@
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sysevent_email_action_babc4fbc2f119890ff24b8e72799b670</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-08 20:14:13</sys_updated_on>
+        <sys_updated_on>2020-06-09 18:48:58</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
