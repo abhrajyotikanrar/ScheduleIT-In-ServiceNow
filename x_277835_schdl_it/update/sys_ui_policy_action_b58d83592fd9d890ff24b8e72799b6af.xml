@@ -6,16 +6,16 @@
         <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-        <sys_created_on>2020-05-27 12:50:25</sys_created_on>
-        <sys_id>7cc39fd52f859c50ff24b8e72799b636</sys_id>
+        <sys_created_on>2020-06-08 22:38:44</sys_created_on>
+        <sys_id>b58d83592fd9d890ff24b8e72799b6af</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>scheduled_time</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy/>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
-        <sys_update_name>sys_ui_policy_action_7cc39fd52f859c50ff24b8e72799b636</sys_update_name>
+        <sys_update_name>sys_ui_policy_action_b58d83592fd9d890ff24b8e72799b6af</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-05-27 12:50:25</sys_updated_on>
+        <sys_updated_on>2020-06-08 22:38:44</sys_updated_on>
         <table>x_277835_schdl_it_task_detail</table>
         <ui_policy display_value="Enable &quot;scheduled_time&quot; field for Schedule Type &quot;Once&quot;">40735bd52f859c50ff24b8e72799b64a</ui_policy>
         <visible>true</visible>

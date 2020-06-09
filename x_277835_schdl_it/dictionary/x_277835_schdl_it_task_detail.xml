@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" type="collection">
+    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" sizeclass="5" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Description" max_length="500" name="description" type="string"/>
         <element choice="3" default="10" label="Reminder Notification Before" max_length="40" name="notification_before" type="choice">
@@ -41,7 +41,7 @@
                 <element inactive_on_update="false" label="Sunday" sequence="170" value="7"/>
             </choice>
         </element>
-        <element label="Scheduled Time" max_length="40" name="scheduled_time" type="calendar_date_time"/>
+        <element label="Scheduled Time" max_length="40" name="scheduled_time" type="glide_date_time"/>
         <element choice="3" default="once" label="Schedule Type" max_length="40" name="schedule_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Once" sequence="100" value="once"/>
