@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>scheduled_time</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-05-27 12:50:25</sys_created_on>
+        <sys_id>7cc39fd52f859c50ff24b8e72799b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scheduled_time</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_ui_policy_action_7cc39fd52f859c50ff24b8e72799b636</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-05-27 12:50:25</sys_updated_on>
+        <table>x_277835_schdl_it_task_detail</table>
+        <ui_policy display_value="Enable &quot;scheduled_time&quot; field for Schedule Type &quot;Once&quot;">40735bd52f859c50ff24b8e72799b64a</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</application>
+        <file_path/>
+        <instance_id>d2a9b93ddb441b802ffa7236bf9619b4</instance_id>
+        <instance_name>dev49027</instance_name>
+        <name>sys_ui_policy_action_7cc39fd52f859c50ff24b8e72799b636</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>scheduled_time</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-05-27 12:50:25</sys_created_on>
+        <sys_id>7cc39fd52f859c50ff24b8e72799b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scheduled_time</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_ui_policy_action_7cc39fd52f859c50ff24b8e72799b636</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-05-27 12:50:25</sys_updated_on>
+        <table>x_277835_schdl_it_task_detail</table>
+        <ui_policy display_value="Enable &quot;scheduled_time&quot; field for Schedule Type &quot;Once&quot;">40735bd52f859c50ff24b8e72799b64a</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>]]></payload>
+        <payload_hash>2095123523</payload_hash>
+        <record_name>scheduled_time</record_name>
+        <reverted_from/>
+        <source>9ad2e6d12f59d890ff24b8e72799b614</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-06-08 19:32:13</sys_created_on>
+        <sys_id>a9e2ead12f59d890ff24b8e72799b660</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172956b40d60000001</sys_recorded_at>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-06-08 19:32:13</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>e5e2ead12a59d890e17a12778cf8b960</update_guid>
+        <update_guid_history>e5e2ead12a59d890e17a12778cf8b960:0,fed3d3d57e859c509b0d23332fb0a1d9:-1965173718</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2020-06-08 22:30:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>45f84c8a5d524e30b275dfa18d054a40</sys_id>
+        <sys_metadata>7cc39fd52f859c50ff24b8e72799b636</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scheduled_time</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_parent display_value="Enable &quot;scheduled_time&quot; field for Schedule Type &quot;Once&quot;">40735bd52f859c50ff24b8e72799b64a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_scope_delete display_value="">363726f2e5ae4b148dd1b4cbe5f1c891</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_7cc39fd52f859c50ff24b8e72799b636</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_7cc39fd52f859c50ff24b8e72799b636">a9e2ead12f59d890ff24b8e72799b660</sys_update_version>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2020-06-08 22:30:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
