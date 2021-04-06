@@ -6,20 +6,22 @@
           /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
           /* Optional GlideRecord */ event) {
 
-          template.print("<div style='background-color: #004d40; height: 50px; padding: 5px 15px;'></div>");
+	template.print("<div style='background-color: #fcae26; height: 50px; padding: 5px 15px;'>");
+	template.print("<div style='color: #222; font-size: 17px; text-align: center;'>This is a system generated email. Please do not reply.</div>");
+	template.print("</div>");
 
 })(current, template, email, email_action, event);]]></script>
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-06-06 12:06:21</sys_created_on>
         <sys_id>d6982aa82f515890ff24b8e72799b671</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>scheduleit_footer</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy/>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_email_d6982aa82f515890ff24b8e72799b671</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-06 19:09:06</sys_updated_on>
+        <sys_updated_on>2020-10-02 18:57:30</sys_updated_on>
     </sys_script_email>
 </record_update>

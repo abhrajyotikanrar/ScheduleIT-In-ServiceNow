@@ -6,8 +6,8 @@
           /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
           /* Optional GlideRecord */ event) {
 
-	template.print("<div style='background-color: #004d40; color: white; padding: 5px 15px;'>");
-	template.print("<h1>ScheduleIT</h1>");
+	template.print("<div style='background-color: #fcae26; padding: 5px 15px;'>");
+	template.print("<h1 style='color: white;'>ScheduleIT</h1>");
 	template.print("</div>");
 	
 
@@ -16,13 +16,13 @@
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-06-06 11:52:32</sys_created_on>
         <sys_id>462f96e02f515890ff24b8e72799b626</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>scheduleit_header</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy/>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_email_462f96e02f515890ff24b8e72799b626</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-06 19:08:36</sys_updated_on>
+        <sys_updated_on>2020-10-02 19:06:02</sys_updated_on>
     </sys_script_email>
 </record_update>

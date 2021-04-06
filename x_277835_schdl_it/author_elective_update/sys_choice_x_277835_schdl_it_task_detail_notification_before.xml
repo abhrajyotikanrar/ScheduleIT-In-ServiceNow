@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="notification_before" table="x_277835_schdl_it_task_detail" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>notification_before</element>
+            <name>x_277835_schdl_it_task_detail</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-06-08 19:31:58</sys_created_on>
+            <sys_id>aba34c7d2fd91c90ff24b8e72799b636</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>notification_before</sys_name>
+            <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+            <sys_update_name>sys_choice_x_277835_schdl_it_task_detail_notification_before</sys_update_name>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-06-08 19:31:58</sys_updated_on>
+        </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>notification_before</element>
@@ -9,6 +25,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>100</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -28,6 +45,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>110</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -47,6 +65,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>120</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -66,6 +85,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>130</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -85,6 +105,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>140</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -104,6 +125,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>150</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -123,6 +145,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>160</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -142,6 +165,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>170</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -161,6 +185,7 @@
             <language>en</language>
             <name>x_277835_schdl_it_task_detail</name>
             <sequence>180</sequence>
+            <synonyms/>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
             <sys_created_on>2020-06-08 19:31:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -171,21 +196,5 @@
             <sys_updated_on>2020-06-08 19:31:58</sys_updated_on>
             <value>120</value>
         </sys_choice>
-        <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>notification_before</element>
-            <name>x_277835_schdl_it_task_detail</name>
-            <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-06-08 19:31:58</sys_created_on>
-            <sys_id>157fb9ad2f151c90ff24b8e72799b64e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>notification_before</sys_name>
-            <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
-            <sys_policy/>
-            <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
-            <sys_update_name>sys_choice_x_277835_schdl_it_task_detail_notification_before</sys_update_name>
-            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-06-08 19:31:58</sys_updated_on>
-        </sys_choice_set>
     </sys_choice>
 </record_update>
