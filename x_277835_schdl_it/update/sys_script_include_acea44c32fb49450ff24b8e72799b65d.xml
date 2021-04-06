@@ -36,7 +36,6 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	*/
 	setReminderLog: function(operation, taskRecord){
 		var gdt = new GlideDateTime();
-		var sysDefaultTimezone = this.getSystemDefaultTimeZoneFormatted();
 		var momentDateTimeFormat = "YYYY-MM-DD HH:mm:ss";
 		var gdtDateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 		
@@ -184,16 +183,6 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			return time;
 		}
 	},
-	
-	/*
-	*getSystemDefaultTimeZoneFormatted: function() => Returns system default timezone (spaces will be replaced with _). Example: "America/Los Angeles" => "America/Los_Angeles"
-	*/
-	getSystemDefaultTimeZoneFormatted: function(){
-		var sysDefaultTimezone = gs.getProperty('glide.sys.default.tz').trim();
-		sysDefaultTimezone = (sysDefaultTimezone != "") ? sysDefaultTimezone : "America/Los Angeles";
-		sysDefaultTimezone = sysDefaultTimezone.split(" ").join("_");
-		return sysDefaultTimezone;
-	},
 
     type: 'ScheduleItUtils'
 });]]></script>
@@ -201,13 +190,13 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-05-19 22:31:37</sys_created_on>
         <sys_id>acea44c32fb49450ff24b8e72799b65d</sys_id>
-        <sys_mod_count>130</sys_mod_count>
+        <sys_mod_count>131</sys_mod_count>
         <sys_name>ScheduleItUtils</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_include_acea44c32fb49450ff24b8e72799b65d</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2021-04-06 22:02:19</sys_updated_on>
+        <sys_updated_on>2021-04-06 22:15:44</sys_updated_on>
     </sys_script_include>
 </record_update>
