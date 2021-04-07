@@ -86,8 +86,6 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var userTimezone = taskRecord.user.time_zone;
 		userTimezone = userTimezone.split(" ").join("_");                      //Relaces spaces with underscore(_)
 		var timeInUserTimezone = moment().tz(userTimezone);
-		var timeInUserTimezoneClone = timeInUserTimezone.clone();
-		
 		
 		var gdtUTC = new GlideDateTime();
 		var currentDateTimeUTC = new GlideDateTime(gdtUTC);
@@ -103,16 +101,17 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			gdtUTC.setValue(taskRecord.scheduled_time);
 			scheduled_time = gdtUTC.getDate().toString();
 			scheduled_time += " " + this.timeFormatConverter(gdtUTC.getTime().getByFormat('hh:mm:ss a'));
-			scheduled_time_moment_user_tz = moment.utc(scheduled_time).tz(userTimezone);
 		}
 		else{
-			var time = this.timeFormatConverter(taskRecord.time.getDisplayValue());
-			time = this.timeFormatConverter(time).split(":");
-			scheduled_time = timeInUserTimezone.format('YYYY-MM-DD');
-			timeInUserTimezone.set({'hour': Number(time[0]), 'minute': Number(time[1]), 'second': Number(time[2])});
-			scheduled_time += " " + this.timeFormatConverter(timeInUserTimezone.format('hh:mm:ss A'));
-			scheduled_time_moment_user_tz = moment.tz(scheduled_time, userTimezone);
+			var time = taskRecord.time.toString().split(" ");
+			time = this.timeFormatConverter(time[1]).split(":");
+			scheduled_time = moment.utc().format('YYYY-MM-DD');
+			var setTime = moment.utc();
+			setTime.set({'hour': Number(time[0]), 'minute': Number(time[1]), 'second': Number(time[2])});
+			scheduled_time += " " + this.timeFormatConverter(setTime.format('hh:mm:ss A'));
 		}
+		
+		scheduled_time_moment_user_tz = moment.utc(scheduled_time).tz(userTimezone);
 		
 		if( schedule_type == 'daily' ){
 			daysToAdd = 1;
@@ -157,7 +156,7 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			}	
 		}
 		
-		if( !checkTimeDiffToday || timeInUserTimezoneClone.isAfter(scheduled_time_moment_user_tz) )
+		if( !checkTimeDiffToday || timeInUserTimezone.isAfter(scheduled_time_moment_user_tz) )
 			scheduled_time_moment_user_tz.add(daysToAdd, 'days');
 		
 		return scheduled_time_moment_user_tz.utc();    //Return the scheduled time as moment object in UTC TZ
@@ -190,13 +189,13 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-05-19 22:31:37</sys_created_on>
         <sys_id>acea44c32fb49450ff24b8e72799b65d</sys_id>
-        <sys_mod_count>131</sys_mod_count>
+        <sys_mod_count>134</sys_mod_count>
         <sys_name>ScheduleItUtils</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_include_acea44c32fb49450ff24b8e72799b65d</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2021-04-06 22:15:44</sys_updated_on>
+        <sys_updated_on>2021-04-07 18:40:19</sys_updated_on>
     </sys_script_include>
 </record_update>

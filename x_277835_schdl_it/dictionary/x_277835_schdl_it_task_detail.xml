@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" sizeclass="13" type="collection">
+    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" sizeclass="2" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Description" max_length="500" name="description" type="string"/>
         <element choice="3" default="10" label="Reminder Notification Before" max_length="40" name="notification_before" type="choice">
