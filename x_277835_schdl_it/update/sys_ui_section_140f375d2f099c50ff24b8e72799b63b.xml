@@ -160,7 +160,7 @@
             <sys_domain_path>/</sys_domain_path>
             <sys_id>140f375d2f099c50ff24b8e72799b63b</sys_id>
             <sys_mod_count>1</sys_mod_count>
-            <sys_name>Schedule &amp; Notification</sys_name>
+            <sys_name>x_277835_schdl_it_group_task</sys_name>
             <sys_overrides/>
             <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
             <sys_policy/>

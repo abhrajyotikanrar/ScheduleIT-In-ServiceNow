@@ -3,77 +3,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>reminder_mode</element>
-            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e362286d2f899c50ff24b8e72799b675</list_id>
+            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">88d2fe7c2fa95010ff24b8e72799b661</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:33:43</sys_created_on>
-            <sys_id>af62286d2f899c50ff24b8e72799b675</sys_id>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
+            <sys_id>44d2fe7c2fa95010ff24b8e72799b662</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:33:43</sys_updated_on>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>reminder_status</element>
-            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e362286d2f899c50ff24b8e72799b675</list_id>
+            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">88d2fe7c2fa95010ff24b8e72799b661</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:33:43</sys_created_on>
-            <sys_id>2362286d2f899c50ff24b8e72799b676</sys_id>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
+            <sys_id>c4d2fe7c2fa95010ff24b8e72799b662</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:33:43</sys_updated_on>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>reminder_time</element>
-            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e362286d2f899c50ff24b8e72799b675</list_id>
+            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">88d2fe7c2fa95010ff24b8e72799b661</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:33:43</sys_created_on>
-            <sys_id>a362286d2f899c50ff24b8e72799b676</sys_id>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
+            <sys_id>48d2fe7c2fa95010ff24b8e72799b662</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:33:43</sys_updated_on>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>task</element>
-            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e362286d2f899c50ff24b8e72799b675</list_id>
+            <element>scheduled_type</element>
+            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">88d2fe7c2fa95010ff24b8e72799b661</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:33:43</sys_created_on>
-            <sys_id>2762286d2f899c50ff24b8e72799b676</sys_id>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
+            <sys_id>c8d2fe7c2fa95010ff24b8e72799b662</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:33:43</sys_updated_on>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>task_time</element>
-            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e362286d2f899c50ff24b8e72799b675</list_id>
+            <element>task</element>
+            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">88d2fe7c2fa95010ff24b8e72799b661</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:33:43</sys_created_on>
-            <sys_id>a762286d2f899c50ff24b8e72799b676</sys_id>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
+            <sys_id>4cd2fe7c2fa95010ff24b8e72799b662</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:33:43</sys_updated_on>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>task_time</element>
+            <list_id display_value="x_277835_schdl_it_reminder_log" element="NULL" name="x_277835_schdl_it_reminder_log" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">88d2fe7c2fa95010ff24b8e72799b661</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
+            <sys_id>ccd2fe7c2fa95010ff24b8e72799b662</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -87,10 +102,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:33:43</sys_created_on>
+            <sys_created_on>2020-06-19 17:40:28</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e362286d2f899c50ff24b8e72799b675</sys_id>
+            <sys_id>88d2fe7c2fa95010ff24b8e72799b661</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_277835_schdl_it_reminder_log</sys_name>
             <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
@@ -98,7 +113,7 @@
             <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
             <sys_update_name>sys_ui_list_x_277835_schdl_it_reminder_log_null</sys_update_name>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:33:43</sys_updated_on>
+            <sys_updated_on>2020-06-19 17:40:28</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

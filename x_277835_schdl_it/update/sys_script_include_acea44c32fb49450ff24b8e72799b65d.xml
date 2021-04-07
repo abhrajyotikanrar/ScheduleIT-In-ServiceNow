@@ -35,26 +35,26 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	*	taskRecord: current (gliderecord) object of the task record being operated
 	*/
 	setReminderLog: function(operation, taskRecord){
-		var scheduled_time = "", reminder_time = "";
+		var gdt = new GlideDateTime();
+		var momentDateTimeFormat = "YYYY-MM-DD HH:mm:ss";
+		var gdtDateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 		
-		var gdt = this.getScheduledTime(taskRecord);
-		scheduled_time = gdt.getDisplayValue();
-
+		var scheduled_time = this.getScheduledTime(taskRecord);
+		gdt.setValueUTC(scheduled_time.format(momentDateTimeFormat), gdtDateTimeFormat);
+		var gdtCopy = new GlideDateTime(gdt);
+		
 		var reminder_period = Number(taskRecord.notification_before);
 		reminder_period = reminder_period * 60 * -1;
-		
-		gdt.addSeconds(reminder_period);
-		reminder_time = gdt.getDisplayValue();
-		
+		gdtCopy.addSeconds(reminder_period);
 		
 		var grLog = new GlideRecord('x_277835_schdl_it_reminder_log');
 		if(operation == "insert"){
 			grLog.initialize();
 			grLog.task = taskRecord.sys_id;
 			grLog.reminder_status = 'scheduled';
-			grLog.task_time = scheduled_time;
+			grLog.task_time = gdt;
 			grLog.reminder_mode = taskRecord.notification_preference;
-			grLog.reminder_time = reminder_time;
+			grLog.reminder_time = gdtCopy;
 			grLog.scheduled_type = taskRecord.schedule_type;
 			grLog.insert();
 		}
@@ -63,9 +63,9 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			grLog.addQuery('reminder_status', 'scheduled');
 			grLog.query();
 			if(grLog.next()){
-				grLog.task_time = scheduled_time;
+				grLog.task_time = gdt;
 				grLog.reminder_mode = taskRecord.notification_preference;
-				grLog.reminder_time = reminder_time;
+				grLog.reminder_time = gdtCopy;
 				grLog.scheduled_type = taskRecord.schedule_type;
 				grLog.update();
 			}
@@ -77,28 +77,41 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	*@params:
 	*	taskRecord: current (gliderecord) object of the task record being operated
 	*
-	*Returns: GlideDateTime object of the calculated next scheduled time
+	*Returns: moment object of the calculated next scheduled time in UTC timezone
 	*/
 	getScheduledTime: function(taskRecord){
-		var gdt = new GlideDateTime();
-		var currentDateTime = new GlideDateTime(gdt);
-		var currentDate = new GlideDateTime(gdt);
+		gs.include('moment.min.js');
+		gs.include('moment-timezone-with-data.min.js');
+		
+		var userTimezone = taskRecord.user.time_zone;
+		userTimezone = userTimezone.split(" ").join("_");                      //Relaces spaces with underscore(_)
+		var timeInUserTimezone = moment().tz(userTimezone);
+		
+		var gdtUTC = new GlideDateTime();
+		var currentDateTimeUTC = new GlideDateTime(gdtUTC);
 		var schedule_type = taskRecord.schedule_type;
 		var scheduled_time = "";
 		var daysToAdd = 0;
 		var checkTimeDiffToday = true;
-		var currentDay = Number(gdt.getDayOfWeekLocalTime());
+		var currentDay = timeInUserTimezone.day();
+		currentDay = (currentDay != 0) ? currentDay : 7;                       //Monday->1, Tuesday->2, Wednesday->3 ..... Sunday->7
+		var scheduled_time_moment_user_tz;
 		
 		if( schedule_type == 'once' ){
-			gdt.setValue(taskRecord.scheduled_time);
-			scheduled_time = gdt.getLocalDate().toString();
-			scheduled_time += " " + gdt.getLocalTime().getByFormat('hh:mm:ss a');
+			gdtUTC.setValue(taskRecord.scheduled_time);
+			scheduled_time = gdtUTC.getDate().toString();
+			scheduled_time += " " + this.timeFormatConverter(gdtUTC.getTime().getByFormat('hh:mm:ss a'));
 		}
 		else{
-			scheduled_time = currentDate.getLocalDate().toString();
-			currentDate.setValue(taskRecord.time);
-			scheduled_time += " " + currentDate.getLocalTime().getByFormat('hh:mm:ss a');
+			var time = taskRecord.time.toString().split(" ");
+			time = this.timeFormatConverter(time[1]).split(":");
+			scheduled_time = moment.utc().format('YYYY-MM-DD');
+			var setTime = moment.utc();
+			setTime.set({'hour': Number(time[0]), 'minute': Number(time[1]), 'second': Number(time[2])});
+			scheduled_time += " " + this.timeFormatConverter(setTime.format('hh:mm:ss A'));
 		}
+		
+		scheduled_time_moment_user_tz = moment.utc(scheduled_time).tz(userTimezone);
 		
 		if( schedule_type == 'daily' ){
 			daysToAdd = 1;
@@ -143,13 +156,31 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			}	
 		}
 		
+		if( !checkTimeDiffToday || timeInUserTimezone.isAfter(scheduled_time_moment_user_tz) )
+			scheduled_time_moment_user_tz.add(daysToAdd, 'days');
 		
-		gdt.setDisplayValue(scheduled_time, "yyyy-MM-dd hh:mm:ss a");
-		if( !checkTimeDiffToday || gdt.before(currentDateTime) ){
-			gdt.addDaysUTC(daysToAdd);
+		return scheduled_time_moment_user_tz.utc();    //Return the scheduled time as moment object in UTC TZ
+	},
+	
+	/*
+	*timeFormatConverter: function() => Return the format converted date in string
+	*@params:
+	*	date: date to be converted
+	*/
+	timeFormatConverter: function(time){
+		time = (typeof time == "string") ? time : time.toString();
+		var tlen = time.length;
+		
+		if(tlen > 8){
+			prefix = time.substr(8, tlen - 8).trim().toLowerCase();
+			substime = time.substr(0, 8).trim().split(":");
+			if(prefix == 'pm' && Number(substime[0]) < 12)
+				substime[0] = Number(substime[0]) + 12;
+			return substime.join(":");
 		}
-		
-		return gdt;
+		else{
+			return time;
+		}
 	},
 
     type: 'ScheduleItUtils'
@@ -158,13 +189,13 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-05-19 22:31:37</sys_created_on>
         <sys_id>acea44c32fb49450ff24b8e72799b65d</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>134</sys_mod_count>
         <sys_name>ScheduleItUtils</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_include_acea44c32fb49450ff24b8e72799b65d</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-07 07:15:04</sys_updated_on>
+        <sys_updated_on>2021-04-07 18:40:19</sys_updated_on>
     </sys_script_include>
 </record_update>

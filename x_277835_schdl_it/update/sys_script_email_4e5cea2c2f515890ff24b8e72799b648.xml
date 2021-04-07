@@ -42,9 +42,10 @@
 	template.print("</tr>");
 	if(rec.schedule_type == 'once'){
 		gdt.setValue(rec.scheduled_time);
+		var gdt1 = gdt.getDisplayValue() + "";
 		template.print("<tr>");
 		template.print("<td style='" + labelStyle + "'>Scheduled Time:</td>");
-		template.print("<td style='" + fieldValueStyle + "'>" + gdt.getDisplayValue() + "</td>");
+		template.print("<td style='" + fieldValueStyle + "'>" + gdt1 + "</td>");
 		template.print("</tr>");
 	}
 	if(rec.schedule_type == 'weekly'){
@@ -82,7 +83,7 @@
 		listLink += "&filter=active=true^groupDYNAMICd6435e965f510100a9ad2572f2b47744^ORscheduled_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe";
 	}
 	
-	template.print("<div style='font-size: 15px;'>Please find your list of active " + taskCategory + " task in this <a href='" + listLink + "'>link</a>.</div>");
+	template.print("<div style='font-size: 15px;'>Please find your list of active " + taskCategory + " tasks in this <a href='" + listLink + "'>link</a>.</div>");
 	template.print("</div>");
 	
 
@@ -91,13 +92,13 @@
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-06-06 13:34:45</sys_created_on>
         <sys_id>4e5cea2c2f515890ff24b8e72799b648</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>display_task_details</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy/>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_email_4e5cea2c2f515890ff24b8e72799b648</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-09 20:57:24</sys_updated_on>
+        <sys_updated_on>2020-06-20 14:18:38</sys_updated_on>
     </sys_script_email>
 </record_update>
