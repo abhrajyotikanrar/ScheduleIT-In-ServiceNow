@@ -3,36 +3,36 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>117e5c692f899c50ff24b8e72799b6e4</sys_id>
+            <sys_created_on>2021-05-01 15:37:46</sys_created_on>
+            <sys_id>371d2de22ffba01056e7e83df699b631</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:46</sys_updated_on>
             <text>ScheduleIT schedule section description</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>d17e5c692f899c50ff24b8e72799b6e4</sys_id>
+            <sys_created_on>2021-05-01 15:37:46</sys_created_on>
+            <sys_id>f71d2de22ffba01056e7e83df699b631</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:46</sys_updated_on>
             <text>ScheduleIT notification section description</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>117e5c692f899c50ff24b8e72799b6e4</element>
+            <element>371d2de22ffba01056e7e83df699b631</element>
             <position>0</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>ed7e5c692f899c50ff24b8e72799b6e7</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>3f1d2de22ffba01056e7e83df699b635</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -40,13 +40,13 @@
             <element>schedule_type</element>
             <position>1</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>617e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>bf1d2de22ffba01056e7e83df699b635</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -54,13 +54,13 @@
             <element>scheduled_time</element>
             <position>2</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>e17e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>331d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -68,13 +68,13 @@
             <element>scheduled_day</element>
             <position>3</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>657e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>b31d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -82,13 +82,13 @@
             <element>time</element>
             <position>4</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>e57e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>371d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -96,27 +96,27 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>697e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>b71d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>d17e5c692f899c50ff24b8e72799b6e4</element>
+            <element>f71d2de22ffba01056e7e83df699b631</element>
             <position>6</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>e97e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>3b1d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -124,13 +124,13 @@
             <element>notification_preference</element>
             <position>7</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>6d7e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>bb1d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -138,13 +138,27 @@
             <element>notification_before</element>
             <position>8</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-27 18:16:22</sys_created_on>
-            <sys_id>ed7e5c692f899c50ff24b8e72799b6e8</sys_id>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>3f1d2de22ffba01056e7e83df699b636</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-27 18:16:22</sys_updated_on>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>duration</element>
+            <position>9</position>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2021-05-01 15:37:47</sys_created_on>
+            <sys_id>bf1d2de22ffba01056e7e83df699b636</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Schedule &amp; Notification" display_value="Schedule &amp; Notification" name="x_277835_schdl_it_individual_task" sys_domain="global" view="Default view">c4de735d2f099c50ff24b8e72799b69e</sys_ui_section>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2021-05-01 15:37:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

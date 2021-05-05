@@ -196,6 +196,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>duration</element>
+            <position>14</position>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2021-05-01 15:35:31</sys_created_on>
+            <sys_id>229ceda22ffba01056e7e83df699b6af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_task_detail" sys_domain="global" view="Default view">a0f26b112fc59c50ff24b8e72799b682</sys_ui_section>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2021-05-01 15:35:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

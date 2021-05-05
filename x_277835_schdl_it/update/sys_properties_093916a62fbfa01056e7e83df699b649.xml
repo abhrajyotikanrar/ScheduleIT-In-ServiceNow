@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Default duration to be set if the duration not provided.&#13;
+The minimum duration should be 10 mins.&#13;
+The default duration should be provided in seconds.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_277835_schdl_it.default.task.duration</name>
+        <read_roles/>
+        <suffix>default.task.duration</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2021-05-01 18:55:53</sys_created_on>
+        <sys_id>093916a62fbfa01056e7e83df699b649</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_277835_schdl_it.default.task.duration</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_properties_093916a62fbfa01056e7e83df699b649</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2021-05-01 19:51:21</sys_updated_on>
+        <type>integer</type>
+        <value>1800</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=093916a62fbfa01056e7e83df699b649"/>
+</record_update>

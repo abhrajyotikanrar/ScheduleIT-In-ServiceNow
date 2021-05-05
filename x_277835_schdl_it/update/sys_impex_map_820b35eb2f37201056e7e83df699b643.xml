@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_impex_map">
+    <sys_impex_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent/>
+        <apply_defaults>true</apply_defaults>
+        <coalesce/>
+        <condition_script/>
+        <data_option>insert_update</data_option>
+        <data_source/>
+        <description/>
+        <external_names/>
+        <name>icalendar.x_277835_schdl_it_reminder_log</name>
+        <order/>
+        <parent/>
+        <script/>
+        <sys_class_name>sys_impex_map</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2021-05-04 19:52:33</sys_created_on>
+        <sys_id>820b35eb2f37201056e7e83df699b643</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>icalendar.x_277835_schdl_it_reminder_log</sys_name>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_impex_map_820b35eb2f37201056e7e83df699b643</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2021-05-04 19:52:33</sys_updated_on>
+        <table>x_277835_schdl_it_reminder_log</table>
+        <type>icalendar</type>
+    </sys_impex_map>
+</record_update>

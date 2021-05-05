@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Reminder Log" max_length="40" name="x_277835_schdl_it_reminder_log" sizeclass="3" type="collection">
+    <element label="Reminder Log" max_length="40" name="x_277835_schdl_it_reminder_log" sizeclass="15" type="collection">
         <element choice="1" label="Reminder Mode" max_length="40" name="reminder_mode" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Email" value="email"/>
@@ -26,6 +26,7 @@
             </choice>
         </element>
         <element label="Task" max_length="32" name="task" reference="x_277835_schdl_it_task_detail" type="reference"/>
+        <element label="Task End Time" max_length="40" name="task_end_time" type="glide_date_time"/>
         <element label="Task Scheduled Time" max_length="40" name="task_time" type="glide_date_time"/>
         <index name="index">
             <element name="task"/>
