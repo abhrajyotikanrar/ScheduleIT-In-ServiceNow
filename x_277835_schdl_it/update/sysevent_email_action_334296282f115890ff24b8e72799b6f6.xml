@@ -14,9 +14,9 @@
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
-        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+        <digest_separator_html><![CDATA[<p><br /></p>
 <hr />
-<p>&nbsp;</p>]]></digest_separator_html>
+<p><br /></p>]]></digest_separator_html>
         <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
         <digest_subject/>
         <digest_template/>
@@ -44,13 +44,13 @@
  }
 </style>
 <div class="content">${mail_script:scheduleit_header}<br />
-<div style="padding: 15px;">Hi&nbsp;${user.first_name},<br /><br />You have scheduled a new task "${title}" on ScheduleIT with below details. Please be assured we will send the reminder notification to you as you choosed. If you wish to change the task details, please click on the below task number and modify the task as per your preferences.</div>
+<div style="padding: 15px;">Hi&nbsp;${user.first_name},<br /><br />You have scheduled a new task "${title}" on ScheduleIT with the below details. Please be assured that we will send the reminder notification to you as you have chosen. If you wish to change the task details, please click on the below task number and modify the task as per your preferences.</div>
 <br />${mail_script:display_task_details} <br />${mail_script:scheduleit_footer}</div>
-<p>&nbsp;</p>]]></message_html>
+<p><br /></p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Notification - Individual Task Created</name>
-        <omit_watermark>false</omit_watermark>
+        <omit_watermark>true</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
@@ -68,7 +68,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>334296282f115890ff24b8e72799b6f6</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Notification - Individual Task Created</sys_name>
         <sys_overrides/>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
@@ -76,7 +76,7 @@
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sysevent_email_action_334296282f115890ff24b8e72799b6f6</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-09 18:46:20</sys_updated_on>
+        <sys_updated_on>2021-05-01 20:00:27</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

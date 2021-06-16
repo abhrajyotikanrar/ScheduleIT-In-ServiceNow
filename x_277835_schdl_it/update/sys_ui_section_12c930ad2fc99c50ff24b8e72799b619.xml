@@ -4,13 +4,13 @@
             <element>task</element>
             <position>0</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>db6e26ce2f0d1090ff24b8e72799b629</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>7a673e6a2f33e01056e7e83df699b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>reminder_status</element>
             <position>1</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>536e26ce2f0d1090ff24b8e72799b62a</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>fe673e6a2f33e01056e7e83df699b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>reminder_time</element>
             <position>2</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>d36e26ce2f0d1090ff24b8e72799b62a</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>76673e6a2f33e01056e7e83df699b6c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>576e26ce2f0d1090ff24b8e72799b62a</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>fa673e6a2f33e01056e7e83df699b6c1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,41 +60,55 @@
             <element>task_time</element>
             <position>4</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>d76e26ce2f0d1090ff24b8e72799b62a</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>72673e6a2f33e01056e7e83df699b6c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>task_end_time</element>
+            <position>5</position>
+            <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>f6673e6a2f33e01056e7e83df699b6c2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
+            <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>reminder_mode</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>5b6e26ce2f0d1090ff24b8e72799b62a</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>7e673e6a2f33e01056e7e83df699b6c2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>scheduled_type</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>abhrajyoti.kanrar</sys_created_by>
-            <sys_created_on>2020-05-29 18:02:20</sys_created_on>
-            <sys_id>db6e26ce2f0d1090ff24b8e72799b62a</sys_id>
+            <sys_created_on>2021-05-01 21:02:24</sys_created_on>
+            <sys_id>f2673e6a2f33e01056e7e83df699b6c3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_277835_schdl_it_reminder_log" sys_domain="global" view="Default view">12c930ad2fc99c50ff24b8e72799b619</sys_ui_section>
             <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-            <sys_updated_on>2020-05-29 18:02:20</sys_updated_on>
+            <sys_updated_on>2021-05-01 21:02:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

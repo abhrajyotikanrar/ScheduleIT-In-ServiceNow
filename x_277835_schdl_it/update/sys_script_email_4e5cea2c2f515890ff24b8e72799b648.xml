@@ -7,7 +7,7 @@
           /* Optional GlideRecord */ event) {
 	
 	var labelStyle = "padding: 10px; width: 35%; background-color: #00796b; color: white;";
-	var fieldValueStyle = "padding: 10px; width: 65%;";
+	var fieldValueStyle = "padding: 10px; width: 65%; background-color: transparent;";
 	
 	var rec;
 	var grTask = new GlideRecord(event.table);
@@ -69,6 +69,10 @@
 	template.print("<td style='" + labelStyle + "'>Notification Before:</td>");
 	template.print("<td style='" + fieldValueStyle + "'>" + rec.notification_before.getDisplayValue() + "</td>");
 	template.print("</tr>");
+	template.print("<tr>");
+	template.print("<td style='" + labelStyle + "'>Duration:</td>");
+	template.print("<td style='" + fieldValueStyle + "'>" + rec.duration.getDisplayValue() + "</td>");
+	template.print("</tr>");
 	template.print("</table>");
 	template.print("<br/>");
 	
@@ -92,13 +96,13 @@
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-06-06 13:34:45</sys_created_on>
         <sys_id>4e5cea2c2f515890ff24b8e72799b648</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>display_task_details</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy/>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_email_4e5cea2c2f515890ff24b8e72799b648</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-20 14:18:38</sys_updated_on>
+        <sys_updated_on>2021-05-01 19:55:48</sys_updated_on>
     </sys_script_email>
 </record_update>

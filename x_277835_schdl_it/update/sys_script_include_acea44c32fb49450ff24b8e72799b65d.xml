@@ -41,8 +41,18 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		
 		var scheduled_time = this.getScheduledTime(taskRecord);
 		gdt.setValueUTC(scheduled_time.format(momentDateTimeFormat), gdtDateTimeFormat);
-		var gdtCopy = new GlideDateTime(gdt);
+		var start = new GlideDate();
+		start.setDisplayValue("1970-01-01");
+		var end = new GlideDate();
+		end.setDisplayValue(taskRecord.duration.toString().split(" ")[0]);
 		
+		var endTime = GlideDate.subtract(start, end).getDisplayValue().split(" ")[0] + " " + taskRecord.duration.toString().split(" ")[1];
+		var endTimeInSec = this.dhmsToSeconds(endTime);
+		
+		var gdtEndTime = new GlideDateTime(gdt);
+		gdtEndTime.addSeconds(endTimeInSec);
+		
+		var gdtCopy = new GlideDateTime(gdt);
 		var reminder_period = Number(taskRecord.notification_before);
 		reminder_period = reminder_period * 60 * -1;
 		gdtCopy.addSeconds(reminder_period);
@@ -53,6 +63,7 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			grLog.task = taskRecord.sys_id;
 			grLog.reminder_status = 'scheduled';
 			grLog.task_time = gdt;
+			grLog.task_end_time = gdtEndTime;
 			grLog.reminder_mode = taskRecord.notification_preference;
 			grLog.reminder_time = gdtCopy;
 			grLog.scheduled_type = taskRecord.schedule_type;
@@ -64,6 +75,7 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			grLog.query();
 			if(grLog.next()){
 				grLog.task_time = gdt;
+				grLog.task_end_time = gdtEndTime;
 				grLog.reminder_mode = taskRecord.notification_preference;
 				grLog.reminder_time = gdtCopy;
 				grLog.scheduled_type = taskRecord.schedule_type;
@@ -83,11 +95,15 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		gs.include('moment.min.js');
 		gs.include('moment-timezone-with-data.min.js');
 		
-		var sysTimezone = gs.getProperty("glide.sys.default.tz").trim();
-		sysTimezone = (sysTimezone != "") ? sysTimezone : "America/Los_Angeles";
-		var userTimezone = taskRecord.user.time_zone;
+		var sysTimezone = gs.getSysTimeZone().toString();
+		var userTimezone = "";
+		if( taskRecord.sys_class_name == "x_277835_schdl_it_individual_task" )
+			userTimezone = taskRecord.user.time_zone;
+		else if( taskRecord.sys_class_name == "x_277835_schdl_it_group_task" )
+			userTimezone = taskRecord.scheduled_user.time_zone;
+		
 		userTimezone = (userTimezone != "") ? userTimezone : sysTimezone;
-		userTimezone = userTimezone.split(" ").join("_");                      //Relaces spaces with underscore(_)
+		userTimezone = userTimezone.split(" ").join("_");                      //Replaces spaces with underscore(_)
 		var timeInUserTimezone = moment().tz(userTimezone);
 		
 		var gdtUTC = new GlideDateTime();
@@ -185,6 +201,34 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			return time;
 		}
 	},
+	
+	/*
+	*secondsToDhms: function() => Convert the Seconds into Days, Hours, Minutes, Seconds (00 00:00:00) format 
+	*@params:
+	*	sec: seconds to be converted in Days, Hours, Minutes, Seconds (00 00:00:00) format
+	*/
+	secondsToDhms: function(sec){
+		var d = Math.floor(sec / 86400);
+		var h = Math.floor(sec % 86400 / 3600);
+		var m = Math.floor(sec % 86400 % 3600 / 60);
+		var s = Math.floor(sec % 86400 % 3600 % 60);
+
+		return d + " " + h + ":" + m + ":" + s; 
+	},
+	
+	/*
+	*dhmsToSeconds: function() => Convert the duration from Days, Hours, Minutes, Seconds (00 00:00:00) format to Seconds
+	*@params:
+	*	dur: duration to be converted from Days, Hours, Minutes, Seconds (00 00:00:00) format to seconds
+	*/
+	dhmsToSeconds: function(dur){
+		var dayToSec = Number(dur.split(" ")[0]) * 86400;
+		var hourToSec = Number(dur.split(" ")[1].split(":")[0]) * 3600;
+		var minToSec = Number(dur.split(" ")[1].split(":")[1]) * 60;
+		var sec = Number(dur.split(" ")[1].split(":")[2]);
+		
+		return Math.floor(dayToSec + hourToSec + minToSec + sec);
+	},
 
     type: 'ScheduleItUtils'
 });]]></script>
@@ -192,13 +236,13 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-05-19 22:31:37</sys_created_on>
         <sys_id>acea44c32fb49450ff24b8e72799b65d</sys_id>
-        <sys_mod_count>137</sys_mod_count>
+        <sys_mod_count>149</sys_mod_count>
         <sys_name>ScheduleItUtils</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_include_acea44c32fb49450ff24b8e72799b65d</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2021-04-07 21:30:06</sys_updated_on>
+        <sys_updated_on>2021-06-15 21:03:51</sys_updated_on>
     </sys_script_include>
 </record_update>

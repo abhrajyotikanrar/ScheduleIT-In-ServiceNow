@@ -29,34 +29,34 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	currentOperation = current.operation();
+    var currentOperation = current.operation();
+	
+    var shUtils = new x_277835_schdl_it.ScheduleItUtils();
+    shUtils.setReminderLog(currentOperation, current);
+    
+    if (currentOperation == "insert") {
+        if (current.sys_class_name == "x_277835_schdl_it_group_task") {
 
-	var shUtils = new x_277835_schdl_it.ScheduleItUtils();
-	shUtils.setReminderLog(currentOperation, current);
-	
-	if( currentOperation == "insert" ){
-		if( current.sys_class_name == "x_277835_schdl_it_group_task" ){
-			var toList = [];
-			var gr = new GlideRecord("sys_user_grmember");
-			gr.addQuery('group', current.group);
-			gr.addQuery('user.active', 'true');
-			gr.query();
-			while(gr.next())
-				toList.push(gr.user.email);
-			
-			gs.eventQueue('x_277835_schdl_it.group.task.created', current, toList.join(','));
-		}
-		else{
-			gs.eventQueue('x_277835_schdl_it.personal.task.created', current, current.user.email);
-		}
-		
-		current.notification_status = 'scheduled';
-		current.task_status = 'scheduled';
-		current.update();
-	}
-	
+            var toList = [];
+            var gr = new GlideRecord("sys_user_grmember");
+            gr.addQuery('group', current.group);
+            gr.addQuery('user.active', 'true');
+            gr.query();
+            while (gr.next())
+                toList.push(gr.user.email);
+
+            gs.eventQueue('x_277835_schdl_it.group.task.created', current, toList.join(','));
+        } else {
+            gs.eventQueue('x_277835_schdl_it.personal.task.created', current, current.user.email);
+        }
+
+        current.notification_status = 'scheduled';
+        current.task_status = 'scheduled';
+        current.update();
+    }
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
@@ -64,7 +64,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>45ab78e12f0d9c50ff24b8e72799b676</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Create / Update Reminder Log</sys_name>
         <sys_overrides/>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
@@ -72,7 +72,7 @@
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_45ab78e12f0d9c50ff24b8e72799b676</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-06-19 14:02:48</sys_updated_on>
+        <sys_updated_on>2021-06-15 20:36:58</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

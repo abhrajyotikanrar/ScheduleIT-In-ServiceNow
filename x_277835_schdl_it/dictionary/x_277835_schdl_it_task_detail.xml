@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" sizeclass="2" type="collection">
+    <element label="Task Detail" max_length="40" name="x_277835_schdl_it_task_detail" sizeclass="0" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Description" max_length="500" name="description" type="string"/>
+        <element label="Notes" max_length="500" name="description" type="string"/>
+        <element label="Duration" max_length="40" name="duration" type="glide_duration"/>
         <element choice="3" default="10" label="Reminder Notification Before" max_length="40" name="notification_before" type="choice">
             <choice>
                 <element inactive_on_update="false" label="5 Minutes" sequence="100" value="5"/>
@@ -25,6 +26,7 @@
         <element choice="1" label="Notification Status" max_length="40" name="notification_status" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Failed" value="failed"/>
+                <element inactive_on_update="false" label="Not Required" value="not_required"/>
                 <element inactive_on_update="false" label="Scheduled" value="scheduled"/>
                 <element inactive_on_update="false" label="Sent" value="sent"/>
             </choice>
@@ -55,6 +57,7 @@
         <element choice="1" label="Task Status" max_length="40" name="task_status" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Completed" value="completed"/>
+                <element inactive_on_update="false" label="Not Required" value="not_required"/>
                 <element inactive_on_update="false" label="Scheduled" value="scheduled"/>
             </choice>
         </element>
