@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sys_email</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sys_email">notification_type=SMTP^target_table=x_277835_schdl_it_reminder_log^typeCHANGESTOsent^ORtypeCHANGESTOsend-ignored^ORtypeCHANGESTOsend-failed^EQ<item display_value="SMTP" endquery="false" field="notification_type" goto="false" newquery="false" operator="=" or="false" value="SMTP"/>
+            <item endquery="false" field="target_table" goto="false" newquery="false" operator="=" or="false" value="x_277835_schdl_it_reminder_log"/>
+            <item display_value="sent" endquery="false" field="type" goto="false" newquery="false" operator="CHANGESTO" or="false" value="sent"/>
+            <item display_value="send-ignored" endquery="false" field="type" goto="false" newquery="false" operator="CHANGESTO" or="true" value="send-ignored"/>
+            <item display_value="send-failed" endquery="false" field="type" goto="false" newquery="false" operator="CHANGESTO" or="true" value="send-failed"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update email notification status</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var grTask = new GlideRecord("x_277835_schdl_it_task_detail");
+	var grReminderLog = new GlideRecord("x_277835_schdl_it_reminder_log");
+	grReminderLog.addQuery("sys_id", current.instance);
+	grReminderLog.addQuery("reminder_status", "scheduled");
+	grReminderLog.query();
+	if( grReminderLog.next() ){
+		if( current.type == "sent" ){
+			grReminderLog.reminder_status = "completed";
+			if( grReminderLog.task.schedule_type == "once" ){
+				if( grTask.get(grReminderLog.task) ){
+					grTask.notification_status = "sent";
+					grTask.update();
+				}
+			}
+		}
+		else{
+			grReminderLog.reminder_status = "failed";
+			if( grReminderLog.task.schedule_type == "once" ){
+				if( grTask.get(grReminderLog.task) ){
+					grTask.notification_status = "failed";
+					grTask.update();
+				}
+			}
+		}
+		grReminderLog.update();
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>abhrajyoti.kanrar</sys_created_by>
+        <sys_created_on>2021-05-15 15:11:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1cda290f2f00b01056e7e83df699b61a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Update email notification status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
+        <sys_update_name>sys_script_1cda290f2f00b01056e7e83df699b61a</sys_update_name>
+        <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
+        <sys_updated_on>2021-05-19 20:32:59</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1cda290f2f00b01056e7e83df699b61a"/>
+</record_update>

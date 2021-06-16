@@ -29,17 +29,20 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	var grLog = new GlideRecord('x_277835_schdl_it_reminder_log');
-	grLog.addQuery('task', current.sys_id);
-	grLog.addQuery('reminder_status', 'scheduled');
-	grLog.query();
-	if(grLog.query()){
-		grLog.reminder_status = 'not_required';
-		grLog.update();
-	}
+    var grLog = new GlideRecord('x_277835_schdl_it_reminder_log');
+    grLog.addQuery('task', current.sys_id);
+    grLog.addQuery('reminder_status', 'scheduled');
+    grLog.query();
+    if (grLog.next()) {
+        grLog.reminder_status = 'not_required';
+        grLog.update();
 
+        current.task_status = "not_required";
+        current.notification_status = "not_required";
+        current.update();
+    }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
@@ -47,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>af8dd2162f495090ff24b8e72799b6a8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Update Reminder Log - Task Deactivation</sys_name>
         <sys_overrides/>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
@@ -55,7 +58,7 @@
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_af8dd2162f495090ff24b8e72799b6a8</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2020-05-30 13:02:39</sys_updated_on>
+        <sys_updated_on>2021-06-16 21:40:25</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

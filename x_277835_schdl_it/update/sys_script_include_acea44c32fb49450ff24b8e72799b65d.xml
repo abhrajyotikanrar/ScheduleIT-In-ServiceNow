@@ -96,7 +96,12 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		gs.include('moment-timezone-with-data.min.js');
 		
 		var sysTimezone = gs.getSysTimeZone().toString();
-		var userTimezone = taskRecord.user.time_zone;
+		var userTimezone = "";
+		if( taskRecord.sys_class_name == "x_277835_schdl_it_individual_task" )
+			userTimezone = taskRecord.user.time_zone;
+		else if( taskRecord.sys_class_name == "x_277835_schdl_it_group_task" )
+			userTimezone = taskRecord.scheduled_user.time_zone;
+		
 		userTimezone = (userTimezone != "") ? userTimezone : sysTimezone;
 		userTimezone = userTimezone.split(" ").join("_");                      //Replaces spaces with underscore(_)
 		var timeInUserTimezone = moment().tz(userTimezone);
@@ -231,13 +236,13 @@ ScheduleItUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>abhrajyoti.kanrar</sys_created_by>
         <sys_created_on>2020-05-19 22:31:37</sys_created_on>
         <sys_id>acea44c32fb49450ff24b8e72799b65d</sys_id>
-        <sys_mod_count>146</sys_mod_count>
+        <sys_mod_count>149</sys_mod_count>
         <sys_name>ScheduleItUtils</sys_name>
         <sys_package display_value="ScheduleIT" source="x_277835_schdl_it">0a0e233a2fb09450ff24b8e72799b65a</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="ScheduleIT">0a0e233a2fb09450ff24b8e72799b65a</sys_scope>
         <sys_update_name>sys_script_include_acea44c32fb49450ff24b8e72799b65d</sys_update_name>
         <sys_updated_by>abhrajyoti.kanrar</sys_updated_by>
-        <sys_updated_on>2021-05-02 09:12:34</sys_updated_on>
+        <sys_updated_on>2021-06-15 21:03:51</sys_updated_on>
     </sys_script_include>
 </record_update>
